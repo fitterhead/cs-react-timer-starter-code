@@ -1,5 +1,5 @@
 :root {
-  --text-shadow-color: #ff9c99;
+  --text-shadow-color: #17BEBB;
   --text-main-color: #d74742;
 }
 * {
@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: #FFC914;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "", "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -22,16 +23,17 @@ code {
     monospace;
 }
 
-h1 {
-  color: var(--text-main-color);
+
+.header {
   font-family: "Rouge Script", cursive;
-  font-size: 130px;
+  font-size: 100px;
+  line-height:7rem;
   font-weight: normal;
-  line-height: 48px;
-  margin: 0 0 50px;
+  color: white;
+  margin: 20px 20px 20px 20px;
   text-align: center;
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
+
 
 p {
   color: #ffffff;
@@ -49,26 +51,31 @@ p {
   align-items: center;
 }
 .timer__wrapper {
-  border-radius: 24px;
+  border-radius: 100%;
+  height:40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--text-shadow-color);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .timer__display {
-  padding-left: 1.5em;
+  padding: 1.5em 1.5em 0em 1.5em;
 }
 .timer__display > p {
   font-size: 5em;
 }
 
 .button__wrapper {
+  width:100%;
   display: flex;
-  width: 30vw;
   padding: 1em;
   justify-content: space-evenly;
   align-items: center;
 }
 .button {
+  
   color: white;
   background-color: var(--text-shadow-color);
   font-size: 1.5em;
@@ -97,11 +104,11 @@ p {
   }
   h1 {
     font-size: 60px;
-    line-height: 0px;
+    line-height: 10rem;
   }
   .button__wrapper {
     margin: auto;
-    width: 100%;
+    width: 80%;
   }
   .timer__display > p {
     font-size: 3.8em;
